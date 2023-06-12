@@ -4,4 +4,4 @@
 
 A plugin for mangoBot
 
-test
+test for
