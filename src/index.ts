@@ -1,5 +1,5 @@
 import { getUnpackedSettings } from 'http2'
-import { Context, Schema } from 'koishi'
+import { Context, Dict, Schema } from 'koishi'
 
 export const name = 'mg-reapeater'
 
@@ -11,3 +11,9 @@ export function apply(ctx: Context) {
   // write your plugin here
 }
 
+interface RepeatState{
+  content: string
+  repeated: boolean
+  times: number
+  usrs: Dict<number>
+}
